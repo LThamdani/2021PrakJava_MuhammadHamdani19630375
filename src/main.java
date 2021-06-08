@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class main {
     public static void main(String[] args) {
         String namaDepan = "Letnan";
@@ -15,5 +17,21 @@ public class main {
         String uniskaString = new String(uniskaChar);
         System.out.println(uniskaChar);
         System.out.println(uniskaString);
+
+        String namaLengkap = namaDepan + " " + namaTengah + " " + namaBelakang;
+        System.out.println(namaLengkap.length());
+        System.out.println(namaLengkap.indexOf("nia"));
+        System.out.println(namaLengkap.substring(8));
+        System.out.println(namaLengkap.substring(8,13));
+        System.out.println(namaLengkap.replace("Letnan","LT"));
+        System.out.println(namaLengkap.toLowerCase());
+        System.out.println(namaLengkap.toUpperCase());
+        System.out.println(namaLengkap.charAt(8));
+
+        String[] namaArray = namaLengkap.split(" ");
+        for(String nama : namaArray)
+            System.out.println(nama);
+
+
     }
 }
