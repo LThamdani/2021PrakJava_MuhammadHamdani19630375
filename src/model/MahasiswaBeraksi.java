@@ -9,10 +9,10 @@ public class MahasiswaBeraksi {
         String polatanggal ="dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(polatanggal);
         mahasiswa mahasiswa = new mahasiswa();
-        mahasiswa.npm = "19630375";
-        mahasiswa.nama = "hamdani >///<";
+        mahasiswa.setNpm ("19630375");
+        mahasiswa.setNama("hamdani >///<");
         try {
-        mahasiswa.tangallahir = sdf.parse("28-10-2001");
+        mahasiswa.setTangallahir(sdf.parse("28-10-2001"));
         mahasiswa.tampilkanAtribut();
     } catch (ParseException e) {
 } System.err.println("Format tanggal tidak sesuai");
